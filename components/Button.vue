@@ -10,6 +10,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 a {
+  text-decoration: none;
   display: inline-block;
   font-size: 2.4rem;
   background-color: #1762a7;
