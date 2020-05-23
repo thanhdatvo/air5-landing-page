@@ -45,4 +45,7 @@ body {
 .app-wrapper {
   position: relative;
 }
+a {
+  text-decoration: none;
+}
 </style>

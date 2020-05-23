@@ -2,10 +2,10 @@
   <div class="nav-bar">
     <!-- <div id="nav-placeholder" /> -->
     <div class="nav-wrapper">
-      <div class="branch row">
+      <a href="#page1" class="branch row">
         <img id="logo" src="/logo.png" alt="logo" />
         <h1>Air5</h1>
-      </div>
+      </a>
 
       <label for="toggle">&#9776;</label>
       <input id="toggle" ref="menu" type="checkbox" name />
