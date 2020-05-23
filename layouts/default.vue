@@ -29,6 +29,7 @@ html {
   @include media-breakpoint-up(md) {
     font-size: 62.5%;
   }
+  scroll-behavior: smooth;
 }
 
 *,
@@ -37,6 +38,9 @@ html {
   box-sizing: border-box;
   margin: 0;
   color: white;
+}
+body {
+  background-color: $base-color;
 }
 .app-wrapper {
   position: relative;

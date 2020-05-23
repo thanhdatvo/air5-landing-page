@@ -1,6 +1,6 @@
 <template>
   <div class="nav-bar">
-    <div id="nav-placeholder" />
+    <!-- <div id="nav-placeholder" /> -->
     <div class="nav-wrapper">
       <div class="branch row">
         <img id="logo" src="/logo.png" alt="logo" />
@@ -8,23 +8,33 @@
       </div>
 
       <label for="toggle">&#9776;</label>
-      <input id="toggle" type="checkbox" name />
+      <input id="toggle" ref="menu" type="checkbox" name />
 
       <div class="menu-wrapper">
-        <a href="#">Discover</a>
-        <a href="#">Join</a>
-        <a href="#">Business</a>
+        <a href="#page1" @click="toggle()">Discover</a>
+        <a href="#page2" @click="toggle()">Join</a>
+        <a href="#page3" @click="toggle()">Business</a>
       </div>
       <div style=" clear: both;"></div>
     </div>
   </div>
 </template>
+<script>
+export default {
+  methods: {
+    toggle() {
+      this.$refs.menu.checked = false
+    }
+  }
+}
+</script>
 <style scoped lang="scss">
 .nav-bar {
   #nav-placeholder {
     height: 5rem;
   }
   .nav-wrapper {
+    z-index: 1;
     background-color: $base-color;
     position: fixed;
     top: 0;
